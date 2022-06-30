@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+        "target": "esnext", // 生成js 的版本，下一版本
+        "module": "esnext", // 生成的module的形式，esm，cmd，amd
+        "strict": true, // 是否严格模式
+        "jsx": "preserve", // jsx用于的开发环境，preserve/react/RN
+        "importHelpers": true, // 指定是否引入tslib里的复制工具函数
+        "moduleResolution": "node", // 用于选择模块解析策略 node/classic
+        "experimentalDecorators": true, // 用于指定是否启用实验性的装饰器特性
+        "forceConsistentCasingInFileNames": true, //是否禁止对同一个文件不一致的引用
+        "skipLibCheck": true, // 跳过一些库的类型检测 (axios -> 类型/ lodash -> @types/lodash / 其他的第三方)
+        "useDefineForClassFields": true,
+        "esModuleInterop": true, // 通过导入内容创建命名空间，实现CommonJS和ES模块之间的互操作性
+        "allowSyntheticDefaultImports": true, // 用于允许从没有默认导出的模块中默认导入
+        "sourceMap": true, // 编译时是否生成.map文件
+        "baseUrl": ".", // 用于设置解析非相对模块名称的基本目录，相对模块不会受到baseUrl的影响
+        "noImplicitAny": false, // 不允许掩式any
+        "allowJs": true, //设置为true后， 即使是js文件  也会编译打包（默认只编译ts）
+        // types用来指定需要包含的模块，只有在这里列出的模块的声明文件才会被加载进来
+        "types": ["webpack-env", "jest", "node"],
+        // 用于设置模块名到基于baseUrl的路径映射
+        "paths": {
+            "@/*": ["src/*"]
+        },
+        // 指定要包含在编译中的库文件
+        "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+    },
+    // 指定待编译的文件
+    "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "tests/**/*.ts", "tests/**/*.tsx"],
+    // 指定排除的文件
+    "exclude": ["node_modules"]
+}
