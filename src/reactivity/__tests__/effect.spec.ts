@@ -62,6 +62,8 @@ describe('effect', () => {
         // 只有当调用`runner`时才会恢复执行该函数
         runner();
         expect(dummy).toBe(4);
+        obj.prop++;
+        expect(dummy).toBe(4);
     });
     // 测试onStop
     it('events: onStop', () => {

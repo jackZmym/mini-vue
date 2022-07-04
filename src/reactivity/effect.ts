@@ -136,9 +136,9 @@ export function track(target, key) {
         return;
     }
     // 将当前正在执行的 ReactiveEffect 类的实例添加到 dep 中
-    dep.add(activeEffect);
+    dep.add(activeEffect!);
     // 将 dep 添加到当前正在执行的 ReactiveEffect 类的实例的 deps property 中
-    activeEffect?.deps.push(dep);
+    activeEffect!.deps.push(dep);
 }
 
 // 用于触发依赖

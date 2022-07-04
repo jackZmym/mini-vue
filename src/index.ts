@@ -17,8 +17,7 @@ const runner = effect(
         if (obsered.num !== 1) {
             stop(runner);
         }
-        // obsered.num++;
-        console.log(obsered.num, '外层的');
+        console.log('外层的');
         // stop(runner);
         // return '外层';
     },
