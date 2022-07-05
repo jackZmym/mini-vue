@@ -17,7 +17,7 @@ describe('effect', () => {
         expect(res).toBe('foo');
     });
 
-    /* effect增加options 测试代码 */
+    /* effect增加options 和reactive（reactive）引发问题 测试代码 */
     it('scheduler', () => {
         let dummy;
         let run: number;
@@ -25,7 +25,8 @@ describe('effect', () => {
         const scheduler = jest.fn(() => {
             run++;
         });
-        const obj = reactive({ foo: 1 });
+        const cs = reactive({ foo: 1 });
+        const obj = reactive(cs);
         const runner = effect(
             () => {
                 dummy = obj.foo;
