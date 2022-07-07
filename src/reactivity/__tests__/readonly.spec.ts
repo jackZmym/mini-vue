@@ -1,4 +1,4 @@
-import { readonly, isReactive, isReadonly, isProxy } from '../reactive';
+import { readonly, isReactive, isReadonly, isProxy, reactive } from '../reactive';
 describe('reactivity/readonly', () => {
     it('should make values readonly', () => {
         const original = { foo: 1 };
@@ -33,5 +33,20 @@ describe('reactivity/readonly', () => {
         wrapped.foo = 2;
         expect(wrapped.foo).toBe(1);
         expect(console.warn).toBeCalled();
+    });
+    it('reactive of readonly', () => {
+        // 处理 readonly 里为reactive时 正常把reactive的proxy对象进行只读代理 修改还是不会成功
+        //if (target[ReactiveFlags.RAW] && !(isReadonly && target[ReactiveFlags.IS_REACTIVE]))此时为false
+        const obsered = reactive({ num: 1 });
+        const readonlyOb = readonly(obsered);
+        expect(obsered).not.toBe(readonlyOb);
+        console.warn = jest.fn();
+        readonlyOb.num++;
+        expect(console.warn).toBeCalled();
+        expect(readonlyOb.num).toBe(1);
+        expect(obsered.num).toBe(1);
+        obsered.num++;
+        expect(obsered.num).toBe(2);
+        expect(readonlyOb.num).toBe(2);
     });
 });

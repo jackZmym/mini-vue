@@ -9,20 +9,18 @@ describe('reactivity/reactive', () => {
         // observed 的 property 的值与 original 的相等
         expect(observed.foo).toBe(1);
     });
-    it('muReactive', () => {
+    it('reactive of Reactive', () => {
         const original = { foo: 1 };
         // reactive 返回对象的响应式副本
         const observed = reactive(original);
         const muObserved = reactive(observed);
         muObserved.foo++;
         expect(muObserved.foo).toBe(2);
+        expect(observed.foo).toBe(2);
         // observed !== original
         expect(observed).toBe(muObserved);
     });
-});
-// reactive.spec.ts
-describe('reactivity/reactive', () => {
-    it('Object', () => {
+    it('isProxy', () => {
         const original = { foo: 1 };
         const observed = reactive(original);
         expect(observed).not.toBe(original);
