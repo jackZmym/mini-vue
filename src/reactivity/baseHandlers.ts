@@ -4,8 +4,8 @@ import { isObject } from '../shared/index';
 // 对 get 和 set 进行缓存，防止重复调用工具函数
 const get = createGetter();
 const set = createSetter();
+// 只读的get
 const readonlyGet = createGetter(true);
-
 // 用于生成 get 函数的工具函数
 function createGetter(isReadonly = false) {
     return function (target, key, receiver) {
