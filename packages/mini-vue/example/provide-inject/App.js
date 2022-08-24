@@ -4,7 +4,7 @@ import {
   inject,
   createTextVNode,
   getCurrentInstance
-} from '../../dist/mini-zsm-vue.esm-bundler.js'
+} from '../../dist/mini-jackz-vue.esm-bundler.js'
 // 第一级组件
 const Provider_I = {
   name: 'Provider_I',

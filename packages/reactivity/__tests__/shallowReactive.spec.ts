@@ -2,7 +2,7 @@ import {
   isReactive,
   shallowReactive,
   isShallow
-} from '@mini-zsm-vue/reactivity'
+} from '@mini-jackz-vue/reactivity'
 import { effect } from '../src/effect'
 describe('shallowReactive', () => {
   test('should not make non-reactive properties reactive', () => {

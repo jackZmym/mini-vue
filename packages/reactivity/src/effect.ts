@@ -1,4 +1,4 @@
-import { extend } from '@mini-zsm-vue/shared'
+import { extend } from '@mini-jackz-vue/shared'
 
 // 用于保存正在执行的 ReactiveEffect 类的实例
 export let activeEffect: ReactiveEffect | undefined

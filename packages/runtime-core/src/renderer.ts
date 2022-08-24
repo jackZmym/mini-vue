@@ -1,10 +1,10 @@
 /* renderer.ts */
 
-import { ShapeFlags } from '@mini-zsm-vue/shared'
+import { ShapeFlags } from '@mini-jackz-vue/shared'
 import { createComponentInstance, setupComponent } from './component'
 import { createAppAPI } from './apiCreateApp'
 import { createTextVNode, Fragment, Text } from './vnode'
-import { effect } from '@mini-zsm-vue/reactivity'
+import { effect } from '@mini-jackz-vue/reactivity'
 
 export function createRenderer(options) {
   // 通过解构赋值获取 createText 函数、createElement 函数、patchProp 函数和 insert 函数

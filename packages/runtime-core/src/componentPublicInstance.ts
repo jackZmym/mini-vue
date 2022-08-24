@@ -1,6 +1,6 @@
 /* componentPublicInstance.ts */
 
-import { hasOwn } from '@mini-zsm-vue/shared'
+import { hasOwn } from '@mini-jackz-vue/shared'
 
 // 用于保存组件实例对象 property 及对应的 getter
 const publicPropertiesMap = {

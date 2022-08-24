@@ -5,7 +5,7 @@
 比如这里就将调用组件时在props对象中声明的方法指定为 onBar 方法：
 */
 
-import { camelize, toHandlerKey } from '@mini-zsm-vue/shared'
+import { camelize, toHandlerKey } from '@mini-jackz-vue/shared'
 
 // 用于调用 props 对象中的指定方法
 export function emit(instance, event, ...args) {

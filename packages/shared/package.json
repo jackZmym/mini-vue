@@ -1,6 +1,6 @@
 {
-  "name": "@mini-zsm-vue/shared",
-  "version": "1.0.3",
+  "name": "@mini-jackz-vue/shared",
+  "version": "1.1.0",
   "main": "index.js",
   "license": "MIT",
   "module": "dist/shared.esm-bundler.js",
@@ -9,7 +9,7 @@
     "dist"
   ],
   "keywords": [
-    "mini-zsm-vue"
+    "mini-jackz-vue"
   ],
   "author": "ZSM",
   "buildOptions": {

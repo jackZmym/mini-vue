@@ -4,7 +4,7 @@ import {
   isReadonly,
   isProxy,
   reactive
-} from '@mini-zsm-vue/reactivity'
+} from '@mini-jackz-vue/reactivity'
 describe('reactivity/readonly', () => {
   it('should make values readonly', () => {
     const original = { foo: 1 }

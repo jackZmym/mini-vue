@@ -1,6 +1,6 @@
 /* component.ts */
 
-import { proxyRefs, shallowReadonly } from '@mini-zsm-vue/reactivity'
+import { proxyRefs, shallowReadonly } from '@mini-jackz-vue/reactivity'
 import { emit } from './componentEmit'
 import { initProps } from './componentProps'
 import { PublicInstanceHandlers } from './componentPublicInstance'

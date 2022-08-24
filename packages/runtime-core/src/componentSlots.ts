@@ -1,6 +1,6 @@
 /* componentSlots.ts */
 
-import { isObject, ShapeFlags } from '@mini-zsm-vue/shared'
+import { isObject, ShapeFlags } from '@mini-jackz-vue/shared'
 
 // 用于将 children 赋值给组件实例对象的 slots property
 export function initSlots(instance, children) {

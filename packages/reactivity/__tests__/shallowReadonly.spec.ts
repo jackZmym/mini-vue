@@ -3,7 +3,7 @@ import {
   isReactive,
   isReadonly,
   isShallow
-} from '@mini-zsm-vue/reactivity'
+} from '@mini-jackz-vue/reactivity'
 describe('reactivity/shallowReadonly', () => {
   test('should not make non-reactive properties reactive', () => {
     const props = shallowReadonly({ n: { foo: 1 } })

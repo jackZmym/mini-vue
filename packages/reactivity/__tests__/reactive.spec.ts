@@ -1,4 +1,4 @@
-import { reactive, isReactive, isProxy } from '@mini-zsm-vue/reactivity'
+import { reactive, isReactive, isProxy } from '@mini-jackz-vue/reactivity'
 describe('reactivity/reactive', () => {
   it('Object', () => {
     const original = { foo: 1 }

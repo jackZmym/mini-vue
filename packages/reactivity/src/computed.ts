@@ -1,5 +1,5 @@
 import { ReactiveEffect } from './effect'
-import { isFunction } from '@mini-zsm-vue/shared'
+import { isFunction } from '@mini-jackz-vue/shared'
 import { ReactiveFlags, toRaw } from './reactive'
 import { triggerRefValue, trackRefValue } from './ref'
 import { Dep } from './dep'

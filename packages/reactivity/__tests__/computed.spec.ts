@@ -1,4 +1,4 @@
-import { reactive, computed, effect } from '@mini-zsm-vue/reactivity'
+import { reactive, computed, effect } from '@mini-jackz-vue/reactivity'
 describe('reactivity/computed', () => {
   it('should return updated value', () => {
     const value = reactive({ foo: 1 })

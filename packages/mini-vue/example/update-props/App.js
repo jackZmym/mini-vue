@@ -1,4 +1,4 @@
-import { h, ref } from '../../dist/mini-zsm-vue.esm-bundler.js'
+import { h, ref } from '../../dist/mini-jackz-vue.esm-bundler.js'
 export default {
   name: 'App',
   setup() {

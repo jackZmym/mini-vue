@@ -3,7 +3,7 @@ import {
   h,
   renderSlots,
   getCurrentInstance
-} from '../../dist/mini-zsm-vue.esm-bundler.js'
+} from '../../dist/mini-jackz-vue.esm-bundler.js'
 // Foo 组件选项对象
 export const Foo = {
   name: 'Foo',

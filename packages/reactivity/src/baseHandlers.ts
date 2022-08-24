@@ -8,7 +8,7 @@ import {
   shallowReadonlyMap,
   shallowReactiveMap
 } from './reactive'
-import { isObject, extend, hasChanged } from '@mini-zsm-vue/shared'
+import { isObject, extend, hasChanged } from '@mini-jackz-vue/shared'
 // 对 get 和 set 进行缓存，防止重复调用工具函数
 const get = createGetter()
 const set = createSetter()

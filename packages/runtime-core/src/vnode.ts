@@ -1,6 +1,6 @@
 /* vnode.ts */
 
-import { ShapeFlags } from '@mini-zsm-vue/shared'
+import { ShapeFlags } from '@mini-jackz-vue/shared'
 
 export const Fragment = Symbol('Fragment')
 export const Text = Symbol('Text')
