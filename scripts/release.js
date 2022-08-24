@@ -166,8 +166,9 @@ function updateDeps(pkg, depType, version) {
   if (!deps) return
   Object.keys(deps).forEach(dep => {
     if (
-      dep === 'vue' ||
-      (dep.startsWith('@vue') && packages.includes(dep.replace(/^@vue\//, '')))
+      dep === 'mini-jackz-vue' ||
+      (dep.startsWith('@mini-jackz-vu') &&
+        packages.includes(dep.replace(/^@vue\//, '')))
     ) {
       console.log(
         chalk.yellow(`${pkg.name} -> ${depType} -> ${dep}@${version}`)
