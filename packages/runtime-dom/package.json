@@ -1,6 +1,6 @@
 {
   "name": "@mini-jackz-vue/runtime-dom",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "index.js",
   "license": "MIT",
   "module": "dist/runtime-dom.esm-bundler.js",
@@ -21,6 +21,6 @@
   ],
   "author": "ZSM",
   "dependencies": {
-    "@mini-jackz-vue/runtime-core": "workspace:^1.0.0"
+    "@mini-jackz-vue/runtime-core": "1.0.6"
   }
 }
