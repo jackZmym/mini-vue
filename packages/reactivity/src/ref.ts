@@ -4,7 +4,7 @@ import {
   shouldTrack,
   activeEffect
 } from './effect'
-import { isObject, hasChanged } from '@mini-vue/shared'
+import { isObject, hasChanged } from '@mini-zsm-vue/shared'
 import { reactive, toRaw } from './reactive'
 import { Dep, createDep } from './dep'
 // ref 对象的接口

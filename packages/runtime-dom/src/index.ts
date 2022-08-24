@@ -1,4 +1,4 @@
-import { createRenderer } from '@mini-vue/runtime-core'
+import { createRenderer } from '@mini-zsm-vue/runtime-core'
 import { patchProp } from './patchProp'
 
 // 用于创建元素
@@ -31,4 +31,4 @@ export function createApp(...args) {
   // 调用 createRenderer 函数返回对象的 createApp 方法
   return renderer.createApp(...args)
 }
-export * from '@mini-vue/runtime-core'
+export * from '@mini-zsm-vue/runtime-core'

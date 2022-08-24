@@ -23,4 +23,4 @@ export {
   // effect
   effect,
   stop
-} from '@mini-vue/reactivity'
+} from '@mini-zsm-vue/reactivity'

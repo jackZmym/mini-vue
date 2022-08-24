@@ -1,6 +1,6 @@
 /* helpers/renderSlots.ts */
 
-import { isObject } from '@mini-vue/shared'
+import { isObject } from '@mini-zsm-vue/shared'
 import { createVNode, Fragment } from '../vnode'
 
 // 用于利用 div 对插槽进行包裹

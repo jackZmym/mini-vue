@@ -1,5 +1,5 @@
 /* Bar.js */
-import { h, renderSlots } from '../../dist/mini-vue.esm-bundler.js'
+import { h, renderSlots } from '../../dist/mini-zsm-vue.esm-bundler.js'
 // Bar 组件选项对象
 export const Bar = {
   name: 'Bar',

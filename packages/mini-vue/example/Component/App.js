@@ -38,16 +38,16 @@ export const App = {
     )
     // 在 render 函数中能够获取 setup 返回对象的 property
     // return h('div', { id: 'root', class: 'root' }, [
-    //   h('p', { id: 'p1', class: 'p1' }, 'hello, mini-vue3'),
+    //   h('p', { id: 'p1', class: 'p1' }, 'hello, mini-zsm-vue3'),
     //   h('p', { id: 'p2', class: 'p2' }, `${this.name}`)
     // ])
   },
   // composition API
   setup() {
-    let name = ref('mini-vue3-TS')
+    let name = ref('mini-zsm-vue3-TS')
     // 返回一个对象
     const barChildClick = (a, b) => {
-      name.value = 'mini-vue3-TS-xxxxx'
+      name.value = 'mini-zsm-vue3-TS-xxxxx'
       console.log('onBar 父组件接收 barChildClick', a, b)
     }
     return {

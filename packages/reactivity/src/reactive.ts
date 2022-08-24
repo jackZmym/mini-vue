@@ -4,7 +4,7 @@ import {
   shallowHandlers,
   shallowReadonlyHandlers
 } from './baseHandlers'
-import { isObject } from '@mini-vue/shared'
+import { isObject } from '@mini-zsm-vue/shared'
 export const enum ReactiveFlags {
   IS_REACTIVE = '__v_isReactive',
   IS_READONLY = '__v_isReadonly',

@@ -7,7 +7,7 @@ import {
   reactive,
   isReactive,
   effect
-} from '@mini-vue/reactivity'
+} from '@mini-zsm-vue/reactivity'
 
 describe('reactivity/ref', () => {
   it('should hold a value', () => {

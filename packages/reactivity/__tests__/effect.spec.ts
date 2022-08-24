@@ -1,4 +1,4 @@
-import { effect, stop, reactive } from '@mini-vue/reactivity'
+import { effect, stop, reactive } from '@mini-zsm-vue/reactivity'
 describe('effect', () => {
   /* effect执行后返回值测试代码 */
   it('should return a function to be called manually', () => {

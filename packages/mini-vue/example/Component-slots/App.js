@@ -4,7 +4,7 @@ import {
   ref,
   createTextVNode,
   getCurrentInstance
-} from '../../dist/mini-vue.esm-bundler.js'
+} from '../../dist/mini-zsm-vue.esm-bundler.js'
 import { Foo } from './Foo.js'
 import { Bar } from './Bar.js'
 import { Baz } from './Baz.js'

@@ -1,6 +1,6 @@
 {
-  "name": "@mini-vue/runtime-core",
-  "version": "1.0.2",
+  "name": "@mini-zsm-vue/runtime-core",
+  "version": "1.0.3",
   "main": "index.js",
   "license": "MIT",
   "module": "dist/runtime-core.esm-bundler.js",
@@ -16,11 +16,11 @@
     "dist"
   ],
   "keywords": [
-    "mini-vue"
+    "mini-zsm-vue"
   ],
   "author": "ZSM",
   "dependencies": {
-    "@mini-vue/reactivity": "workspace:^1.0.0",
-    "@mini-vue/shared": "workspace:^1.0.0"
+    "@mini-zsm-vue/reactivity": "workspace:^1.0.0",
+    "@mini-zsm-vue/shared": "workspace:^1.0.0"
   }
 }

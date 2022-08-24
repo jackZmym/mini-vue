@@ -1,6 +1,6 @@
 {
-  "name": "@mini-vue/reactivity",
-  "version": "1.0.2",
+  "name": "@mini-zsm-vue/reactivity",
+  "version": "1.0.3",
   "main": "index.js",
   "license": "MIT",
   "module": "dist/reactivity.esm-bundler.js",
@@ -17,10 +17,10 @@
     "dist"
   ],
   "keywords": [
-    "mini-vue"
+    "mini-zsm-vue"
   ],
   "author": "ZSM",
   "dependencies": {
-    "@mini-vue/shared": "workspace:^1.0.0"
+    "@mini-zsm-vue/shared": "workspace:^1.0.0"
   }
 }

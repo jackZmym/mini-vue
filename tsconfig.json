@@ -10,7 +10,7 @@
     "moduleResolution": "node" /* Specify how TypeScript looks up a file from a given module specifier. */,
     "baseUrl": "." /* Specify the base directory to resolve non-relative module names. */,
     "paths": {
-      "@mini-vue/*": ["packages/*/src"]
+      "@mini-zsm-vue/*": ["packages/*/src"]
     } /* Specify a set of entries that re-map imports to additional lookup locations. */,
     "types": ["jest", "node"],
     "allowJs": false /* Allow JavaScript files to be a part of your program. Use the 'checkJS' option to get errors from these files. */,

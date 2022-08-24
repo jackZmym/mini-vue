@@ -8,7 +8,7 @@ const path = require('path')
 const { build } = require('esbuild')
 
 // 需要打包的模块。默认打包 vue 模块
-const target = args._[0] || 'mini-vue'
+const target = args._[0] || 'mini-zsm-vue'
 
 // 打包的格式。默认为 global，即打包成 IIFE 格式，在浏览器中使用
 const format = args.f || 'global'
