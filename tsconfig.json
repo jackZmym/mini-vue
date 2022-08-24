@@ -1,32 +1,30 @@
 {
-    "compilerOptions": {
-        "target": "esnext", // 生成js 的版本，下一版本
-        "module": "esnext", // 生成的module的形式，esm，cmd，amd
-        "strict": true, // 是否严格模式
-        "jsx": "preserve", // jsx用于的开发环境，preserve/react/RN
-        "importHelpers": true, // 指定是否引入tslib里的复制工具函数
-        "moduleResolution": "node", // 用于选择模块解析策略 node/classic
-        "experimentalDecorators": true, // 用于指定是否启用实验性的装饰器特性
-        "forceConsistentCasingInFileNames": true, //是否禁止对同一个文件不一致的引用
-        "skipLibCheck": true, // 跳过一些库的类型检测 (axios -> 类型/ lodash -> @types/lodash / 其他的第三方)
-        "useDefineForClassFields": true,
-        "esModuleInterop": true, // 通过导入内容创建命名空间，实现CommonJS和ES模块之间的互操作性
-        "allowSyntheticDefaultImports": true, // 用于允许从没有默认导出的模块中默认导入
-        "sourceMap": true, // 编译时是否生成.map文件
-        "baseUrl": ".", // 用于设置解析非相对模块名称的基本目录，相对模块不会受到baseUrl的影响
-        "noImplicitAny": false, // 不允许掩式any
-        "allowJs": true, //设置为true后， 即使是js文件  也会编译打包（默认只编译ts）
-        // types用来指定需要包含的模块，只有在这里列出的模块的声明文件才会被加载进来
-        "types": ["webpack-env", "jest", "node"],
-        // 用于设置模块名到基于baseUrl的路径映射
-        "paths": {
-            "@/*": ["src/*"]
-        },
-        // 指定要包含在编译中的库文件
-        "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
-    },
-    // 指定待编译的文件
-    "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "tests/**/*.ts", "tests/**/*.tsx"],
-    // 指定排除的文件
-    "exclude": ["node_modules"]
+  "compilerOptions": {
+    "outDir": "dist", // 输出的目录
+    "target": "es2016", // 转译的目标语法
+    "lib": ["esnext", "dom"], //支持的类库 esnext及dom
+    "experimentalDecorators": true /* Enable experimental support for TC39 stage 2 draft decorators. */,
+    "jsx": "preserve", // jsx 不转义
+    "module": "esnext", // 模块格式
+    "rootDir": "." /* Specify the root folder within your source files. */,
+    "moduleResolution": "node" /* Specify how TypeScript looks up a file from a given module specifier. */,
+    "baseUrl": "." /* Specify the base directory to resolve non-relative module names. */,
+    "paths": {
+      "@mini-vue/*": ["packages/*/src"]
+    } /* Specify a set of entries that re-map imports to additional lookup locations. */,
+    "types": ["jest", "node"],
+    "allowJs": false /* Allow JavaScript files to be a part of your program. Use the 'checkJS' option to get errors from these files. */,
+    "removeComments": false /* Disable emitting comments. */,
+    "downlevelIteration": true /* Emit more compliant, but verbose and less performant JavaScript for iteration. */,
+    "resolveJsonModule": true, // 解析 json 模块
+    "esModuleInterop": true, // 允许通过 es6 语法引入 commonjs 模块
+    "forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
+    "strict": true /* Enable all strict type-checking options. */,
+    "noImplicitAny": false /* Enable error reporting for expressions and declarations with an implied 'any' type. */,
+    "skipLibCheck": true /* Skip type checking all .d.ts files. */
+  },
+  // 指定待编译的文件
+  "include": ["packages/global.d.ts", "packages/*/src", "packages/*/__tests__"],
+  // 指定排除的文件
+  "exclude": ["node_modules"]
 }

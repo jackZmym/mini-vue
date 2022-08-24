@@ -1,0 +1,26 @@
+{
+  "name": "@mini-vue/runtime-dom",
+  "version": "1.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "module": "dist/runtime-dom.esm-bundler.js",
+  "buildOptions": {
+    "name": "VueRuntimeDom",
+    "formats": [
+      "esm-bundler",
+      "cjs",
+      "global"
+    ]
+  },
+  "files": [
+    "index.js",
+    "dist"
+  ],
+  "keywords": [
+    "mini-vue"
+  ],
+  "author": "ZSM",
+  "dependencies": {
+    "@mini-vue/runtime-core": "workspace:^1.0.0"
+  }
+}

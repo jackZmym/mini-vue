@@ -1,0 +1,26 @@
+{
+  "name": "mini-vue",
+  "version": "1.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "module": "dist/mini-vue.esm-bundler.js",
+  "files": [
+    "index.js",
+    "dist"
+  ],
+  "keywords": [
+    "mini-vue"
+  ],
+  "author": "ZSM",
+  "buildOptions": {
+    "name": "miniVue",
+    "formats": [
+      "esm-bundler",
+      "cjs",
+      "global"
+    ]
+  },
+  "dependencies": {
+    "@mini-vue/runtime-core": "workspace:^1.0.0"
+  }
+}
