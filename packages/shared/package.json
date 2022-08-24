@@ -1,6 +1,6 @@
 {
   "name": "@mini-jackz-vue/shared",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "index.js",
   "license": "MIT",
   "module": "dist/shared.esm-bundler.js",
