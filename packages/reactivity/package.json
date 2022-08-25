@@ -1,6 +1,6 @@
 {
   "name": "@mini-jackz-vue/reactivity",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "main": "index.js",
   "license": "MIT",
   "module": "dist/reactivity.esm-bundler.js",
@@ -25,6 +25,6 @@
   },
   "author": "ZSM",
   "dependencies": {
-    "@mini-jackz-vue/shared": "1.0.7"
+    "@mini-jackz-vue/shared": "1.0.9"
   }
 }
