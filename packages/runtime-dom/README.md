@@ -1,6 +1,6 @@
 # 🚀 Welcome to 响应系统的源码简版 -ZSM runtime-dom
 
-This project has been created using **webpack-cli**, you can now run
+This project has been created using **pnpm+monorepo+esbuild（dev）+rollup.js(build)**, you can now run
 
 ```
 pnpm  build
