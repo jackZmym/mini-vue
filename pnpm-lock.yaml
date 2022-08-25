@@ -58,27 +58,27 @@ importers:
 
   packages/min-jackz-vue:
     specifiers:
-      '@mini-jackz-vue/runtime-core': 1.1.0
+      '@mini-jackz-vue/runtime-core': 1.0.8
     dependencies:
       '@mini-jackz-vue/runtime-core': link:../runtime-core
 
   packages/reactivity:
     specifiers:
-      '@mini-jackz-vue/shared': 1.1.0
+      '@mini-jackz-vue/shared': 1.0.8
     dependencies:
       '@mini-jackz-vue/shared': link:../shared
 
   packages/runtime-core:
     specifiers:
-      '@mini-jackz-vue/reactivity': 1.1.0
-      '@mini-jackz-vue/shared': 1.1.0
+      '@mini-jackz-vue/reactivity': 1.0.8
+      '@mini-jackz-vue/shared': 1.0.8
     dependencies:
       '@mini-jackz-vue/reactivity': link:../reactivity
       '@mini-jackz-vue/shared': link:../shared
 
   packages/runtime-dom:
     specifiers:
-      '@mini-jackz-vue/runtime-core': 1.1.0
+      '@mini-jackz-vue/runtime-core': 1.0.8
     dependencies:
       '@mini-jackz-vue/runtime-core': link:../runtime-core
 
