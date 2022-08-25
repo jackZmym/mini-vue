@@ -47,7 +47,7 @@ importers:
       execa: registry.npmmirror.com/execa/4.0.2
       fs-extra: registry.npmmirror.com/fs-extra/9.0.1
       jest: registry.npmmirror.com/jest/28.1.3_@types+node@18.7.11
-      mini-jackz-vue: link:packages/mini-vue
+      mini-jackz-vue: link:packages/min-jackz-vue
       minimist: registry.npmmirror.com/minimist/1.2.0
       rollup: registry.npmmirror.com/rollup/2.78.1
       rollup-plugin-typescript2: registry.npmmirror.com/rollup-plugin-typescript2/0.33.0_accrhai6qopda76wnqb3pkewpq
@@ -56,29 +56,29 @@ importers:
       tslib: registry.npmmirror.com/tslib/2.4.0
       typescript: registry.npmmirror.com/typescript/4.7.4
 
-  packages/mini-vue:
+  packages/min-jackz-vue:
     specifiers:
-      '@mini-jackz-vue/runtime-core': 1.0.7
+      '@mini-jackz-vue/runtime-core': 1.0.8
     dependencies:
       '@mini-jackz-vue/runtime-core': link:../runtime-core
 
   packages/reactivity:
     specifiers:
-      '@mini-jackz-vue/shared': 1.0.7
+      '@mini-jackz-vue/shared': 1.0.8
     dependencies:
       '@mini-jackz-vue/shared': link:../shared
 
   packages/runtime-core:
     specifiers:
-      '@mini-jackz-vue/reactivity': 1.0.7
-      '@mini-jackz-vue/shared': 1.0.7
+      '@mini-jackz-vue/reactivity': 1.0.8
+      '@mini-jackz-vue/shared': 1.0.8
     dependencies:
       '@mini-jackz-vue/reactivity': link:../reactivity
       '@mini-jackz-vue/shared': link:../shared
 
   packages/runtime-dom:
     specifiers:
-      '@mini-jackz-vue/runtime-core': 1.0.7
+      '@mini-jackz-vue/runtime-core': 1.0.8
     dependencies:
       '@mini-jackz-vue/runtime-core': link:../runtime-core
 

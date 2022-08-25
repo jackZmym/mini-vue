@@ -1,6 +1,6 @@
 {
   "name": "@mini-jackz-vue/shared",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "index.js",
   "license": "MIT",
   "module": "dist/shared.esm-bundler.js",
@@ -11,6 +11,10 @@
   "keywords": [
     "mini-jackz-vue"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackZmym/mini-vue.git"
+  },
   "author": "ZSM",
   "buildOptions": {
     "name": "VueShared",
