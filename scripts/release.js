@@ -6,39 +6,50 @@ const semver = require('semver')
 const currentVersion = require('../package.json').version
 const { prompt } = require('enquirer')
 const execa = require('execa')
-
+// 当前版本 或者指定版本
 const preId =
   args.preid ||
   (semver.prerelease(currentVersion) && semver.prerelease(currentVersion)[0])
+//是否发布 命令行传参 --dry
 const isDryRun = args.dry
+// 是否跳过test测试流程
 const skipTests = args.skipTests
+//是否跳过build生产包
 const skipBuild = args.skipBuild
+//所有的包名
 const packages = fs
   .readdirSync(path.resolve(__dirname, '../packages'))
   .filter(p => !p.endsWith('.ts') && !p.startsWith('.'))
-
+//跳过发布的包
 const skippedPackages = []
-
+// 版本号对应+1位置 version 1.0.0
 const versionIncrements = [
   'patch',
   'minor',
   'major',
   ...(preId ? ['prepatch', 'preminor', 'premajor', 'prerelease'] : [])
 ]
-
+// 输出 对应方式的 版本名 version 1.0.0
 const inc = i => semver.inc(currentVersion, i, preId)
+//执行依赖包的bin
 const bin = name => path.resolve(__dirname, '../node_modules/.bin/' + name)
+// 运行bin命令
 const run = (bin, args, opts = {}) =>
   execa(bin, args, { stdio: 'inherit', ...opts })
+//控制台输出 类似预执行
 const dryRun = (bin, args, opts = {}) =>
   console.log(chalk.blue(`[dryrun] ${bin} ${args.join(' ')}`), opts)
+//执行方式
 const runIfNotDry = isDryRun ? dryRun : run
+//获取包名地址
 const getPkgRoot = pkg => path.resolve(__dirname, '../packages/' + pkg)
+//控制台输出语言
 const step = msg => console.log(chalk.cyan(msg))
 
+//主流程
 async function main() {
   let targetVersion = args._[0]
-
+  //命令行传参 是否带有指定版本号
   if (!targetVersion) {
     // no explicit version, offer suggestions
     const { release } = await prompt({
@@ -63,15 +74,16 @@ async function main() {
   }
 
   if (!semver.valid(targetVersion)) {
+    //传参的版本号不对
     throw new Error(`invalid target version: ${targetVersion}`)
   }
-
+  // 请选择版本
   const { yes } = await prompt({
     type: 'confirm',
     name: 'yes',
     message: `Releasing v${targetVersion}. Confirm?`
   })
-
+  // no 直接 return
   if (!yes) {
     return
   }
@@ -144,14 +156,14 @@ async function main() {
   }
   console.log()
 }
-
+//更新包
 function updateVersions(version) {
   // 1. update root package.json
   updatePackage(path.resolve(__dirname, '..'), version)
   // 2. update all packages
   packages.forEach(p => updatePackage(getPkgRoot(p), version))
 }
-
+//更新各个包版本以及依赖
 function updatePackage(pkgRoot, version) {
   const pkgPath = path.resolve(pkgRoot, 'package.json')
   const pkg = JSON.parse(fs.readFileSync(pkgPath, 'utf-8'))
@@ -177,7 +189,7 @@ function updateDeps(pkg, depType, version) {
     }
   })
 }
-
+//发布npm包
 async function publishPackage(pkgName, version, runIfNotDry) {
   if (skippedPackages.includes(pkgName)) {
     return
