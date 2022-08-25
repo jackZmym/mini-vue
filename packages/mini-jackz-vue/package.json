@@ -1,6 +1,6 @@
 {
   "name": "mini-jackz-vue",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "main": "index.js",
   "license": "MIT",
   "module": "dist/mini-jackz-vue.esm-bundler.js",
@@ -37,6 +37,6 @@
     "url": "git+https://github.com/jackZmym/mini-vue.git"
   },
   "dependencies": {
-    "@mini-jackz-vue/runtime-core": "1.0.10"
+    "@mini-jackz-vue/runtime-core": "1.0.11"
   }
 }
