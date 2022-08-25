@@ -1,5 +1,5 @@
 /* App.js */
-const { h, ref } = miniVue
+const { h, ref } = miniJackzVue
 import { Foo } from './Foo.js'
 // 用于保存组件的 this
 window.self = null

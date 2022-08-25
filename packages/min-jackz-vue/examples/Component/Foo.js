@@ -1,5 +1,5 @@
 /* Foo.js */
-const { h, ref } = miniVue
+const { h, ref } = miniJackzVue
 // Foo 组件选项对象
 window.selfF = null
 export const Foo = {
