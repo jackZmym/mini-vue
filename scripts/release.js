@@ -135,7 +135,7 @@ async function main() {
     await publishPackage(pkg, targetVersion, runIfNotDry)
   }
 
-  // push to GitHub
+  // push to GitHub 推送
   step('\nPushing to GitHub...')
   await runIfNotDry('git', ['tag', `v${targetVersion}`])
   await runIfNotDry('git', ['push', 'origin', `refs/tags/v${targetVersion}`])
