@@ -1,6 +1,6 @@
 {
   "name": "@mini-jackz-vue/runtime-core",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "main": "index.js",
   "license": "MIT",
   "module": "dist/runtime-core.esm-bundler.js",
@@ -24,7 +24,7 @@
   },
   "author": "ZSM",
   "dependencies": {
-    "@mini-jackz-vue/reactivity": "2.0.1",
-    "@mini-jackz-vue/shared": "2.0.1"
+    "@mini-jackz-vue/reactivity": "2.0.2",
+    "@mini-jackz-vue/shared": "2.0.2"
   }
 }
